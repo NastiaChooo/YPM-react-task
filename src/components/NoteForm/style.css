@@ -1,0 +1,45 @@
+.note-form{
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.note-form__title{
+    font-size: 18px;
+    text-align: start;
+    font-weight: bold;
+}
+
+.note-form__field{
+    padding: 10px 10px;
+    border-radius: 5px;
+    border: 1px solid;
+}
+
+.note-form__area{
+    resize: none;
+    height: 100px;
+    max-width: 560px;
+}
+
+.modal-update-btn {
+    margin-top: 10px;
+    display: inline-block;
+    padding: 8px 18px;
+    font-size: 18px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #008CBA;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+}
+
+.modal-update-btn:hover {
+    background-color: #008CBA;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}

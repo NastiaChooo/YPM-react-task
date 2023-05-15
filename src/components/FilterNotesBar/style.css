@@ -1,0 +1,40 @@
+.wrap {
+    padding: 15px;
+    display: flex;
+    gap: 15px
+}
+
+.custom-input {
+    position: relative;
+}
+
+.custom-input input[type="text"] {
+    width: 85%;
+    padding: 8px 12px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.custom-input input[type="text"]:focus {
+    outline: none;
+    border-color: #0066ff;
+}
+
+.custom-input label {
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    transform: translateY(-50%);
+    font-size: 16px;
+    color: #666;
+    pointer-events: none;
+    transition: all 0.2s ease-out;
+}
+
+.custom-input input[type="text"]:focus + label,
+.custom-input input[type="text"]:not(:placeholder-shown) + label {
+    top: 8px;
+    font-size: 12px;
+    color: #0066ff;
+}
